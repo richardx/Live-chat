@@ -1,9 +1,11 @@
 import firebase from 'firebase/app'
 import 'firebase/firestore'
 import 'firebase/auth'
+import 'firebase/storage'
+
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDjTiATH9qs9KbQ0S1dOvkzTkh6cxPpuHQ",
+  apiKey: process.env.VUE_APP_GOOGLE_API_KEY,
   authDomain: "vue-live-chat-c05c5.firebaseapp.com",
   projectId: "vue-live-chat-c05c5",
   storageBucket: "vue-live-chat-c05c5.appspot.com",
